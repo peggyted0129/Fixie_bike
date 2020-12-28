@@ -1,0 +1,78 @@
+.header-pic {
+    top: 0;
+    right: 0;
+    & .header-img {
+        height: calc( 100vh - 96px - 120px );
+        object-fit: fill;
+        width: 100%;
+    }
+    & h3 {
+        padding: 23px 48px;
+    }
+}
+.header-text {
+    width: 90%;
+    height: calc( 100vh - 96px );
+    & h2 {
+        font-size: 80px;
+    }
+}
+@media (min-width: 1440px){
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/*-------------------------*/
+.section {
+    height: 100vh;
+    & .js-img {
+        top: 0;
+        left: 0;
+    }
+    & .section-text {
+        & h2 {
+            bottom: 20%;
+            right: -20%;
+        }
+    }
+    & .js-img-next {
+        top: 0;
+        right: 0;
+    }
+    & .section-one-text {
+        & h2 {
+            top: 25%;
+            left: -20%;
+        }
+    }
+}
+
+[data-aos='translateX-left'] {
+    transform: translateX(0px);
+    &.aos-animate {
+      transform: translateX(-40px);
+    }
+  }
+  
+  [data-aos='translateX-right'] {
+    transform: translateX(0px);
+    &.aos-animate {
+      transform: translateX(40px);
+    }
+  }
+
+/*------------------------------*/
+.banner {
+    @include banner('../images/img4.jpg',640px);
+    background-attachment: fixed;
+    &-text {
+        bottom: 15%;
+        left: 0;
+    }
+}
+
+/*------------------------------*/
+.card-img {
+    height: 600px;
+}
