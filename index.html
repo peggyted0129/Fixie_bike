@@ -1,9 +1,50 @@
----
-title: Fixie
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fixie</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover-min.css" integrity="sha512-glciccPoOqr5mfDGmlJ3bpbvomZmFK+5dRARpt62nZnlKwaYZSfFpFIgUoD8ujqBw4TmPa/F3TX28OctJzoLfg==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md bg-white border-bottom sticky-top py-0">
+  <div class="container-fluid d-flex justify-content-center justify-content-md-between position-relative">
+    <h1 class="m-md-7 m-5"><a class="navbar-logo" href="index.html">Fixie_bike</a></h1>
+    <button class="navbar-icon navbar-toggler position-absolute" type="button" data-toggle="collapse" data-target="#navbarContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div>
+        <span class="toggler-bar toggler-bar-top"></span>
+        <span class="toggler-bar toggler-bar-middle"></span>
+        <span class="toggler-bar toggler-bar-bottom"></span>
+      </div>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link h5 text-center text-dark font-weight-bolder py-5 py-md-6 px-md-7" href="#">Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link h5 text-center text-dark font-weight-bolder py-5 py-md-6 px-md-7" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link h5 text-center text-dark font-weight-bolder py-5 py-md-6 px-md-7" href="#">contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
 
 <header class="position-relative">
     <div class="container">
@@ -124,3 +165,32 @@ current: index
         </div>
     </div>
 </section>
+
+<footer class="bg-info py-4 py-md-0">  
+    <div class="container d-flex align-items-center justify-content-sm-between justify-content-center">    
+        <ul class="d-flex"> 
+            <li class="footer-link nav-item border-0">
+                <a class="nav-link h6 text-center text-dark font-weight-bolder py-5 py-md-6 px-md-7" href="#">Product</a>
+            </li>
+            <li class="footer-link nav-item border-0">
+                <a class="nav-link h6 text-center text-dark font-weight-bolder py-5 py-md-6 px-md-7" href="#">Blog</a>
+            </li>
+            <li class="footer-link nav-item border-0">
+                <a class="nav-link h6 text-center text-dark font-weight-bolder py-5 py-md-6 px-md-7" href="#">contact</a>
+            </li>
+        </ul>
+        <p class="h7 text-center text-secondary d-md-block d-none">© 2020 Fixie. All Rights Reserved.</p>
+        <h4 class="m-md-7"><a class="navbar-logo d-sm-block d-none" href="index.html">Fixie_bike</a></h4>
+    </div>
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
