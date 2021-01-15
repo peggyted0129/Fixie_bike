@@ -35,6 +35,14 @@ $(document).ready(function() {
 
 
     $(window).scroll(function(e) {
+      if ($(window).scrollTop() <= 0) {
+        $('.navbar').addClass('bg-white');
+        $('.navbar').removeClass('bg-info');
+      }else {
+        $('.navbar').addClass('bg-info');
+        $('.navbar').removeClass('bg-white');
+      }
+      
       const scrollPos = $(this).scrollTop();
       const windowHeight = $(window).height();
       const jsImg = $('.js-img').offset().top;
