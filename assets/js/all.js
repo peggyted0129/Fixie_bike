@@ -46,14 +46,6 @@ $(document).ready(function () {
     $(".toggler-bar-bottom").toggleClass("toggler-bar-bottom-rotate");
   });
   $(window).scroll(function (e) {
-    if ($(window).scrollTop() <= 0) {
-      $('.navbar').addClass('bg-white');
-      $('.navbar').removeClass('bg-info');
-    } else {
-      $('.navbar').addClass('bg-info');
-      $('.navbar').removeClass('bg-white');
-    }
-
     var scrollPos = $(this).scrollTop();
     var windowHeight = $(window).height();
     var jsImg = $('.js-img').offset().top;
